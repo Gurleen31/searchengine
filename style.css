@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #cc432e;
+    --background-color: whitesmoke;
+    --text-color: #34495e;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-size: 1.8em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 40px;
+    box-shadow: var(--shadow);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#searchInput {
+    flex-grow: 1;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+
+#searchButton {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#searchButton:hover {
+    background-color: #2980b9;
+}
+
+.history-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+}
+
+#searchHistory {
+    list-style-type: none;
+    padding: 0;
+}
+
+#searchHistory li {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#searchHistory li:hover {
+    background-color: #f7f7f7;
+}
+
+#clearHistoryButton {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 16px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#clearHistoryButton:hover {
+    background-color: #cb5a5a;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #searchInput, #searchButton {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}
